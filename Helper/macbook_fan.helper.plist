@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+  launchd job for macbook_fan's root helper, registered by the app with SMAppService.daemon.
+  Copied into MacbookFan.app/Contents/Library/LaunchDaemons/ by the "Copy Launch Daemon" build phase.
+  The helper is the app's own executable started with -helper; launchd starts it on demand
+  when the app connects to the "macbook_fan.helper" Mach service.
+  AssociatedBundleIdentifiers must equal the app's PRODUCT_BUNDLE_IDENTIFIER.
+-->
+<plist version="1.0">
+<dict>
+	<key>Label</key>
+	<string>macbook_fan.helper</string>
+	<key>BundleProgram</key>
+	<string>Contents/MacOS/MacbookFan</string>
+	<key>ProgramArguments</key>
+	<array>
+		<string>Contents/MacOS/MacbookFan</string>
+		<string>--helper</string>
+	</array>
+	<key>MachServices</key>
+	<dict>
+		<key>macbook_fan.helper</key>
+		<true/>
+	</dict>
+	<key>AssociatedBundleIdentifiers</key>
+	<array>
+		<string>com.7digits.macbook-fan</string>
+	</array>
+</dict>
+</plist>

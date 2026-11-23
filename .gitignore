@@ -1,0 +1,79 @@
+# MacBookFan — macOS app (Xcode / Swift)
+
+# ---------------------------------------------------------------
+# macOS
+# ---------------------------------------------------------------
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+Icon?
+.Spotlight-V100
+.Trashes
+.fseventsd
+
+# ---------------------------------------------------------------
+# Xcode — per-user settings (window layout, breakpoints, schemes)
+# The project file and shared data are kept.
+# ---------------------------------------------------------------
+xcuserdata/
+*.xcuserstate
+*.xcscmblueprint
+*.xccheckout
+*.moved-aside
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+*.pbxuser
+!default.pbxuser
+!default.mode1v3
+!default.mode2v3
+!default.perspectivev3
+
+# ---------------------------------------------------------------
+# Build output
+# ---------------------------------------------------------------
+build/
+dist/
+*.dmg
+DerivedData/
+*.app
+*.dSYM/
+*.dSYM.zip
+*.ipa
+*.xcarchive/
+*.hmap
+
+# Test results
+*.xcresult/
+
+# ---------------------------------------------------------------
+# Swift Package Manager
+# Package.resolved is kept so dependency versions stay pinned.
+# ---------------------------------------------------------------
+.build/
+.swiftpm/
+Packages/
+
+# ---------------------------------------------------------------
+# Signing and secrets — never commit these
+# ---------------------------------------------------------------
+*.p12
+*.cer
+*.mobileprovision
+*.provisionprofile
+*.keychain
+.env
+.env.*
+
+# ---------------------------------------------------------------
+# Editors and tools
+# ---------------------------------------------------------------
+.vscode/
+.idea/
+*.swp
+*~
+.claude/settings.local.json
+
+# Old packaging output
+macbook_fan_Release/
