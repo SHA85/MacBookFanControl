@@ -1,4 +1,4 @@
-# macbook_fan — Native macOS Fan Control & Thermal Monitor
+# Native macOS Fan Control & Thermal Monitor
 
 **macbook_fan** is a lightweight, native SwiftUI fan control and hardware thermal monitoring utility built specifically for **Apple Silicon Macs (M1 – M5)**, including full support for updated **Apple M5** SMC data types and `IOHID` thermal sensors.
 
